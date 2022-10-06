@@ -23,7 +23,8 @@ environment {
             
             steps {
               withSonarQubeEnv('SonarServer') {
-                  sh 'mvn sonar:sonar -Dsonar.projectKey=kserge2001_geolocation -Dsonar.java.binaries=.'
+                 // sh 'mvn sonar:sonar -Dsonar.projectKey=kserge2001_geolocation -Dsonar.java.binaries=.'
+                  sh 'mvn sonar:sonar -Dsonar.projectKey=geo-job-meeting -Dsonar.organization=geo-job-meeting-1 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=272e5536e9efc850018f1af48bd1017e63bc76b9'
               }
             }
           }
